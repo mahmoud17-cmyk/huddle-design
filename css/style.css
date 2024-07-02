@@ -1,0 +1,111 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+:root {
+    --Violet: hsl(257, 40%, 49%);
+    --SoftMagenta: hsl(300, 69%, 71%);
+
+}
+body {
+    font-family: "Open Sans", sans-serif;
+    scrollbar-width: 0;
+    background-image: url(../img/bg-desktop.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: var(--Violet);
+}
+.container {
+    padding: 7vh;
+}
+@media (max-width:767px) {
+    .container {
+        background-image: url(../img/bg-mobile.svg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-color: var(--Violet);
+        padding-left: 55px;
+    }
+    .container .design .box1 {
+        flex-direction: column;
+        text-align: center;
+        margin: 10vh auto 5vh;
+    }
+    .container .design .box1 .image img {
+        width: 300px;
+        padding-top: 15vh;
+    }
+    .container .design .box1 .text h1 {
+        font-size: 1.5em;
+    }
+    .container .design > img {
+        width: 150px;
+    }
+    .container .design .icons {
+        top: 102vh;
+        left: 15%;
+    }
+}
+.container .design > img {
+    position: absolute;
+    top: 25px;
+    left: 25px;
+}
+.container .design .box1 {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 45px;
+}
+.container .design {
+}
+.container .design .box1 .text {
+    flex-basis: 50%;
+    color: white;
+
+}
+
+.container .design .box1 .text p {
+    font-weight: 300;
+    margin-bottom: 5vh;
+    line-height: 1.7;
+}
+.container .design .box1 .text a {
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    background-color: var(--SoftMagenta);
+    padding: 15px 45px;
+    border-radius: 25px;
+    transition: 0.4s;
+}
+.container .design .box1 .text a:hover {
+    background-color: white;
+    color: black;
+    font-weight: normal;
+}
+.container .design .icons {
+    position: absolute;
+    bottom: 5vh;
+    right: 5vw;
+}
+.container .design .icons i {
+    margin-left: 40px;
+    font-size: 25px;
+    color: white;
+    border: 1px solid white;
+    padding: 10px;
+    transition: 0.4s;
+    border-radius: 50%;
+    cursor: pointer;
+}
+.container .design .icons i:hover {
+    color: var(--SoftMagenta);
+    border-color: var(--SoftMagenta);
+}
